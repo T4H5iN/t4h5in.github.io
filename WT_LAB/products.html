@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="products.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <nav class="flex justify-between p-3">
+        <h1 class="text-2xl font-bold text-blue-500">MyShop</h1>
+        <ul class="flex gap-10">
+            <li><a href="#" class="p-2 hover:text-white hover:px-2 py-1 hover:bg-blue-700 hover:rounded-sm">Home</a></li>
+            <li><a href="#" class="p-2 hover:text-white hover:px-2 py-1 hover:bg-blue-700 hover:rounded-sm">Products</a></li>
+            <li><a href="#" class="p-2 hover:text-white hover:px-2 py-1 hover:bg-blue-700 hover:rounded-sm">Cart</a></li>
+            <li><a href="#" class="p-2 hover:text-white hover:px-2 py-1 hover:bg-blue-700 hover:rounded-sm">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="text-white bg-blue-500 text-center p-5">
+        <h1 class="text-2xl font-bold">Our Products</h1>
+        <p>Explore our latest collection.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 p-3">
+        <div class="shadow-lg rounded-lg">
+            <img src="Images/product.jpg" class="rounded-lg h-50 w-full" alt="Product1">
+            <div class="p-2">
+                <h3 class="font-bold">Product 1</h3>
+                <p>Price: $25</p>
+                <button class="hover:bg-blue-700 text-white bg-blue-500 rounded-sm px-3 py-px mt-2">Add to Cart</button>
+            </div>
+        </div>
+        <div class="shadow-lg rounded-lg">
+            <img src="Images/product1.jpg" class="rounded-lg h-50 w-full" alt="Product2">
+            <div class="p-2">
+                <h3 class="font-bold">Product 2</h3>
+                <p>Price: $25</p>
+                <button class="hover:bg-blue-700 text-white bg-blue-500 rounded-sm px-3 py-px mt-2">Add to Cart</button>
+            </div>
+        </div>
+        <div class="shadow-lg rounded-lg">
+            <img src="Images/product2.jpg" class="rounded-lg h-50 w-full" alt="Product3">
+            <div class="p-2">
+                <h3 class="font-bold">Product 3</h3>
+                <p>Price: $25</p>
+                <button class="hover:bg-blue-700 text-white bg-blue-500 rounded-sm px-3 py-px mt-2">Add to Cart</button>
+            </div>
+        </div>
+        <div class="shadow-lg rounded-lg">
+            <img src="Images/product3.avif" class="rounded-lg h-50 w-full" alt="Product4">
+            <div class="p-2">
+                <h3 class="font-bold">Product 4</h3>
+                <p>Price: $25</p>
+                <button class="hover:bg-blue-700 text-white bg-blue-500 rounded-sm px-3 py-px mt-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white p-5 text-center">
+        <p>&copy 2025 MyShop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
