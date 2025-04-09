@@ -1,0 +1,41 @@
+.header {
+	background-color: #ffffff;
+	height: 130px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.middle {
+	background-color: #f3f5f7;
+	height: 681px;
+	display: grid;
+}
+
+.footer {
+	background-color: #111727;
+	height: 100px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.explore {
+	background-color: #4d47b3;
+	color: white;
+	border-radius: 5px;
+	width: 180px;
+	height: 45px;
+	font-size: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
