@@ -1,7 +1,77 @@
-<html>
-  <body>
-    <center><h1>Welcome to GitWEB!</h1></center>
-    <a href="WT_LAB/home.html">Home</a>
-    <a href="WT_LAB/portfolio.html">Portfolio</a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #211d4f;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .link-card {
+      background: linear-gradient(145deg, #ffffff, #e6e6f0);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .link-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .link-card a {
+      text-decoration: none;
+      color: #211d4f;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .link-card a:hover {
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="links">
+      <div class="link-card">
+        <a href="WT_LAB/home.html">Home</a>
+      </div>
+      <div class="link-card">
+        <a href="WT_LAB/portfolio.html">Portfolio</a>
+      </div>
+      <div class="link-card">
+        <a href="Tourney/index.html">Tournament</a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
