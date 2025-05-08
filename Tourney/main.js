@@ -14,7 +14,8 @@ window.onload = function () {
     }
 
     const tc = document.getElementById('teams-container');
-    const teamDetails = document.getElementById('team-details');
+    const teamModal = document.getElementById('team-modal');
+    const modalClose = document.getElementById('modal-close');
     const teamLogo = document.getElementById('team-logo');
     const teamCaptain = document.getElementById('team-captain');
     const teamPlayers = document.getElementById('team-players');
@@ -28,23 +29,21 @@ window.onload = function () {
                 <h3>${t.name}</h3>
                 <p>Captain: ${t.captain}</p>
             `;
-
+        
             teamCard.addEventListener('click', () => {
-                teamDetails.style.display = 'block';
+                teamModal.style.display = 'block';
                 teamLogo.src = t.logo;
                 teamCaptain.textContent = `Owner: ${t.owner}`;
                 teamPlayers.innerHTML = '';
-
+        
                 t.players.forEach(id => {
                     const player = players.find(p => p.id === id);
                     if (player) {
                         const playerCard = document.createElement('div');
                         playerCard.classList.add('card');
-
                         if (player.name === t.captain) {
                             playerCard.classList.add('captain-highlight');
                         }
-
                         playerCard.innerHTML = `
                             <img src="${player.image}" alt="${player.name}">
                             <h3>${player.name}</h3>
@@ -55,8 +54,18 @@ window.onload = function () {
                     }
                 });
             });
-
+        
             tc.appendChild(teamCard);
+        });
+
+        modalClose.addEventListener('click', () => {
+            teamModal.style.display = 'none';
+        });
+    
+        window.addEventListener('click', e => {
+            if (e.target === teamModal) {
+                teamModal.style.display = 'none';
+            }
         });
     }
 

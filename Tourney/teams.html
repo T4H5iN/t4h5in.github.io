@@ -18,16 +18,23 @@
 
     <section id="teams-section">
         <h1 style="text-align: center; margin-top: 100px;">Teams</h1>
-        <div id="teams-container" style="padding: 50px 180px 50px 180px;"></div>
-        <div id="team-details">
-            <div id="team-header">
-                <img id="team-logo" src="" alt="Team Logo">
-                <h2 id="team-captain"></h2>
-            </div>
-            <div id="team-players"></div>
-        </div>
-        
+        <div id="teams-container" style="padding: 50px 180px;"></div>
     </section>
+    
+    <div id="team-modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="close">&times;</span>
+            <div id="team-details">
+                <div id="team-header">
+                    <img id="team-logo" src="" alt="Team Logo">
+                    <h2 id="team-captain"></h2>
+                </div>
+                <div id="team-players"></div>
+            </div>
+        </div>
+    </div>
+    
+
 
     <script src="data.js"></script>
     <script src="main.js"></script>
