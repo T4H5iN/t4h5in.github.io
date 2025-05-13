@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -14,9 +18,14 @@
     }
 
     .container {
-      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;     
       padding: 50px 20px;
     }
+
 
     h1 {
       font-size: 2.5rem;
@@ -26,9 +35,16 @@
 
     .links {
       display: flex;
-      justify-content: center;
       gap: 20px;
+      justify-content: center;
       flex-wrap: wrap;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+      width: fit-content;
     }
 
     .link-card {
@@ -39,6 +55,10 @@
       width: 200px;
       text-align: center;
       transition: transform 0.3s, box-shadow 0.3s;
+      color: #211d4f;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     .link-card:hover {
@@ -46,31 +66,16 @@
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     }
 
-    .link-card a {
-      text-decoration: none;
-      color: #211d4f;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    .link-card a:hover {
-      padding: 5px 10px;
-      border-radius: 5px;
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="links">
-      <div class="link-card">
-        <a href="WT_LAB/home.html">Home</a>
-      </div>
-      <div class="link-card">
-        <a href="WT_LAB/portfolio.html">Portfolio</a>
-      </div>
-      <div class="link-card">
-        <a href="https://shortpitch.netlify.app/">Tournament</a>
-      </div>
+      
+        <a href="WT_LAB/home.html"><div class="link-card">Home</div></a>
+        <a href="WT_LAB/portfolio.html"><div class="link-card">Portfolio</div></a>
+        <a href="https://shortpitch.netlify.app/"><div class="link-card">Tournament</div></a>
+      
     </div>
   </div>
 </body>
