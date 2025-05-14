@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p><img src="https://www.icegif.com/wp-content/uploads/icegif-5607.gif" width="300"></p>
+    <button type="button" onclick="document.write(5+6)">CLick to see</button><br><br>
+    <p id="result"></p>
+    <button type="button" onclick="document.getElementById('result').innerHTML=5+6">Click to appear</button><br><br>
+    <button type="button" onclick="alert(5+6)">Click to alert</button><br><br>
+    <script src="index.js"></script><br><br>
+    <script>
+        document.write("Watch this space for our e-store<br>Coming Soon...<br>");
+        document.write(5+6);
+        console.log(5+6);
+    </script>
+
+    <p id="var"></p>
+
+    <script>
+        let a,b,c;
+        let person="Tahsin"
+        let guy=" Tahsin"
+        a=5; b=6; c=a+b;
+
+        //var n=5;
+        //console.log(n);
+
+        let n=10;
+
+        if(true){
+            let n=99;
+            console.log(n);
+        }
+
+        console.log(n);
+
+        const pi=3.1416;
+
+        let obj={
+            name: "Mdti",
+            age: 25
+        };
+
+        let array=["red","green","blue"];
+
+        function fun(){
+            console.log("GeeksforGeeks");
+        }
+
+        const sum = 5 + 3;
+        const diff = 10-2;
+        const p= 4*2;
+        const q= 16/2;
+
+        console.log(sum, diff, p, q);
+
+        let ni = 10;
+        ni += 5;
+        ni *= 2;
+        console.log(ni);
+        document.getElementById("var").innerHTML="Ni="+ni;
+    </script>
+    <button type="button" onclick="document.getElementById('bulb').src='pic_bulbon.gif'">Click to on</button><br><br>
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif"><br>
+    <button type="button" onclick="document.getElementById('bulb').src=imag">Click to off</button><br><br>
+    <script>
+        const imag="https://www.w3schools.com/js/pic_bulboff.gif";
+    </script>
+</body>
+</html>
