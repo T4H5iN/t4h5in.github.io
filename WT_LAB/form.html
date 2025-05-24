@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="form">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="form-name" onkeyup="nameValidate()">
+            <span id="name-error"></span>
+        </div>
+        <div>
+            <label for="email">E-mail: </label>
+            <input type="mail" id="form-email" onkeyup="mailValidate()">
+            <span id="mail-error"></span>
+        </div>
+        <div>
+            <label for="phone">Phone Number: </label>
+            <input type="number" id="form-phone" onkeyup="phoneValidate()">
+            <span id="phone-error"></span>
+        </div>
+        <button type="submit">Submit</button>
+        <span id="submit-error"></span>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

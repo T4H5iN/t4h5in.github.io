@@ -1,14 +1,14 @@
-const info=document.getElementById("info");
-info.innerText="This is a paragraph";
-info.style.color="blue";
+const info = document.getElementById("info");
+info.innerText = "I love Javascript";
+info.style.color = "red";
 
-const box=document.getElementsByClassName("box");
-box.classname="highlight";
-console.log(box);
+const box = document.getElementsByClassName("box");
+box.className = "highlight";
+console.log(box.className);
 
 const card=document.getElementsByClassName("card");
 for(let i=0;i<card.length;i++){
-    card[i].style.border="solid 1px red";
+    card[i].style.border="solid 1px black";
 }
 card[0].style.backgroundColor="Gray";
 
@@ -17,5 +17,19 @@ child1[0].innerText="First Item";
 child1[2].innerText="Last Item";
 
 const table=document.querySelector("table");
-table.after("The table is above");
-table.insertAdjacentHTML("afterbegin","<tr><td>Row 0</td></tr>");
+table.after("The table is shown above");
+table.insertAdjacentHTML("afterbegin","<tr><td>New Row</td></tr>");
+
+const mid = document.querySelector(".middle");
+mid.previousElementSibling.style.color = "blue";
+mid.nextElementSibling.style.color = "green";
+
+const radio = document.getElementsByName("Gender");
+for (let i = 0; i < radio.length; i++) {
+    radio[i].onclick = function() {
+        console.log("Selected gender:", this.value);
+    };
+}
+
+
+
